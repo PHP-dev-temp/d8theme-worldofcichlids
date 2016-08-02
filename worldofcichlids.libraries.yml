@@ -1,0 +1,27 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/slicknav.css: {}
+      css/styleslicknav.css: {}
+      css/lightbox.css: {}
+      css/style.css: {}
+
+fonts:
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=Nunito:700: { type: external }
+
+js-header:
+  header: true
+  js:
+    js/masonry.pkgd.min.js: {}
+    js/modernizr.min.js: {}
+  dependencies:
+    - core/jquery
+
+js-footer:
+  js:
+    js/jquery.slicknav.js: {}
+    js/custom.js: {}
+    js/lightbox.js: {}

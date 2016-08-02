@@ -1,0 +1,40 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region div.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+
+
+<!-- FOOTER -->
+
+
+<footer class="footer" id="footer">
+      <div class="container">
+
+
+  <!-- NAVIGATION -->
+  <div class="navigation">
+  </div>
+  <div class="footer-logo">
+    <a href="/">WORLD OF<br>CICHLIDS</a>
+  </div>
+    <nav class="footer-nav">
+
+    {% if content %}
+      <div{{ attributes }}>
+        {{ content }}
+      </div>
+    {% endif %}
+
+</nav>
+</div>
+</footer>
